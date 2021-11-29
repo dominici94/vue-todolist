@@ -76,6 +76,12 @@ li:not(:last-child){
     border-bottom: 1px solid gray;
 }
 
+li span,
+li i,
+button{
+    cursor: pointer;
+}
+
 .barrato{
     text-decoration: line-through;
 }

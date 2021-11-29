@@ -46,6 +46,13 @@ const app = new Vue({
                 this.lista.push({text:this.inputTesto, done: false});
                 this.inputTesto = '';
             }
+        },
+        invertiValore: function(index){
+            if(this.lista[index].done == false){
+                this.lista[index].done = true;
+            }else{
+                this.lista[index].done = false;
+            }
         }
     }
     
