@@ -22,16 +22,16 @@ const app = new Vue({
         lista: [
             // ogni oggetto ha 2 proprietà: testo e fatto
             {
-                text: 'fare l\'esercizio',
+                text: 'Fare l\'esercizio',
                 done: false
             },
             {
-                text: 'fare la spesa',
+                text: 'Fare la spesa',
                 done: false
 
             },
             {
-                text: 'andarea dormire',
+                text: 'Andarea dormire',
                 done: false
             }
         ]

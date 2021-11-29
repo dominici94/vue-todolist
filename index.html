@@ -32,11 +32,8 @@
             </div>
             <div class="list-container todos">
                 <ul>
-                    <li><span>fare la spesa</span><i class="far fa-times-circle"></i></li>
-                    <li><span>fare la spesa</span><i class="far fa-times-circle"></i></li>
-                    <li><span>fare la spesa</span><i class="far fa-times-circle"></i></li>
-                    <li><span>fare la spesa</span><i class="far fa-times-circle"></i></li>
-                    <li><span>fare la spesa</span><i class="far fa-times-circle"></i></li>
+                    <li v-for="item in lista"><span :class="item.done? 'barrato' : '' ">{{item.text}}</span><i class="far fa-times-circle"></i></li>
+                    
                 </ul>
             </div>
             
