@@ -36,8 +36,10 @@ const app = new Vue({
             }
         ]
     },
-    merthods: {
-        
+    methods: {
+        rimuoviLista: function(index) {
+            this.lista.splice(index, 1)
+        }
     }
     
 });

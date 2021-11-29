@@ -32,8 +32,7 @@
             </div>
             <div class="list-container todos">
                 <ul>
-                    <li v-for="item in lista"><span :class="item.done? 'barrato' : '' ">{{item.text}}</span><i class="far fa-times-circle"></i></li>
-                    
+                    <li v-for="(item, index) in lista"><span :class="item.done? 'barrato' : '' ">{{item.text}}</span><i class="far fa-times-circle" @click="rimuoviLista(index)"></i></li>
                 </ul>
             </div>
             
