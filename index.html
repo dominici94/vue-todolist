@@ -27,7 +27,7 @@
         <!-- main -->
         <main>
             <div class="container">
-                <input type="text" placeholder="inserisci qualcosa alla lista" v-model="inputTesto">
+                <input type="text" placeholder="inserisci qualcosa alla lista" v-model="inputTesto" @keyup.enter='aggiungiLista'>
                 <button @click="aggiungiLista">Aggiungi</button>
             </div>
             <div class="list-container todos">
