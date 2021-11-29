@@ -27,13 +27,14 @@
         <!-- main -->
         <main>
             <div class="container">
-                <input type="text" placeholder="inserisci qualcosa alla lista">
-                <button>Aggiungi</button>
+                <input type="text" placeholder="inserisci qualcosa alla lista" v-model="inputTesto">
+                <button @click="aggiungiLista">Aggiungi</button>
             </div>
             <div class="list-container todos">
-                <ul>
+                <ul v-if="lista.length > 0">
                     <li v-for="(item, index) in lista"><span :class="item.done? 'barrato' : '' ">{{item.text}}</span><i class="far fa-times-circle" @click="rimuoviLista(index)"></i></li>
                 </ul>
+                <h2 v-else>Non ci sono cose da fare in lista</h2>
             </div>
             
 

@@ -34,11 +34,18 @@ const app = new Vue({
                 text: 'Andarea dormire',
                 done: false
             }
-        ]
+        ],
+        inputTesto:'',
     },
     methods: {
         rimuoviLista: function(index) {
             this.lista.splice(index, 1)
+        },
+        aggiungiLista: function(){
+            if(this.inputTesto != ''){
+                this.lista.push({text:this.inputTesto, done: false});
+                this.inputTesto = '';
+            }
         }
     }
     
